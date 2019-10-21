@@ -2,9 +2,12 @@ version: 2.1
 
 jobs:
   build:
-    executor: mkdocs
+    docker:
+      - image: circleci/python:3.7
     steps:
-      - checkout 
+      - checkout
+      - run: sudo pip install mkdocs
+      - run: sudo pip install mkdocs-material
       - run: apt upgrade -y && apt update -y && apt install -y git
       - run: |
           git config --global user.name onihusube
