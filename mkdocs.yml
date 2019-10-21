@@ -9,12 +9,15 @@ edit_uri: ""
 theme:
   name: 'material'
   language: 'ja'
+  palette:
+    primary: 'Light Green'
+    accent: 'Light Green'
   feature:
     tabs: true
 extra:
   search:
     language: 'en, ja'
-    tokenizer: '[\s　、。，．がのをにへとでやかもる「」『』]+'
+    tokenizer: '[\s　、。，．・～]+'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/onihusube9'
