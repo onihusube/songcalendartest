@@ -14,4 +14,12 @@ jobs:
       - run: |
           git config --global user.name onihusube
           git config --global user.email 44743040+onihusube@users.noreply.github.com
-          mkdocs gh-deploy
+          mkdocs gh-deploy --message "CicleCI auto deploy [skip ci]"
+
+workflow:
+  version: 2.1
+  jobs:
+    - build:
+      filters:
+        branches:
+          only: master
