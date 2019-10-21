@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  build:
+    executor: mkdocs
+    steps:
+      - checkout 
+      - run: apt upgrade -y && apt update -y && apt install -y git
+      - run: |
+          git config --global user.name onihusube
+          git config --global user.email 44743040+onihusube@users.noreply.github.com
+          mkdocs gh-deploy
