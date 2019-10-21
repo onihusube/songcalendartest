@@ -10,8 +10,8 @@ theme:
   name: 'material'
   language: 'ja'
   palette:
-    primary: 'Light Green'
-    accent: 'Light Green'
+    primary: 'Cyan'
+    accent: 'Cyan'
   feature:
     tabs: true
 extra:
