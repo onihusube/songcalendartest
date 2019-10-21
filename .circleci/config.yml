@@ -8,7 +8,6 @@ jobs:
       - checkout
       - run: sudo pip install mkdocs
       - run: sudo pip install mkdocs-material
-      - run: apt upgrade -y && apt update -y && apt install -y git
       - run: |
           git config --global user.name onihusube
           git config --global user.email 44743040+onihusube@users.noreply.github.com
