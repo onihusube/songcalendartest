@@ -1,0 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
+      - run: sudo pip install mkdocs
+      - run: sudo pip install mkdocs-material
+      - run: |
+          git config --global user.name onihusube
+          git config --global user.email 44743040+onihusube@users.noreply.github.com
+          mkdocs gh-deploy --message "CicleCI auto deploy [skip ci]"
+
+workflow:
+  version: 2.1
+  jobs:
+    - build:
+      filters:
+        branches:
+          only: master
