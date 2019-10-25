@@ -21,7 +21,6 @@ extra:
   search:
     language: 'en, ja'
     tokenizer: '[\s　、。，．・～&!?！？はがのをにへとでやかもる「」『』]+'
-    # tokenizer: '[\s　、。，．・～-]+'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/onihusube9'
