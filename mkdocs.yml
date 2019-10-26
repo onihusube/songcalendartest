@@ -27,7 +27,9 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home:
+    - Home : index.md
+    - サイトの見方 : 凡例.md
   - 2019:
     - 1月🎍: 2019/1月分.md
     - 2月👹: 2019/2月分.md
