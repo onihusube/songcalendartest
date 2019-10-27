@@ -24,6 +24,9 @@ extra:
   social:
     - type: 'twitter'
       link: 'https://twitter.com/onihusube9'
+google_analytics:
+  - 'UA-150909325-1'
+  - 'auto'
 
 # Page tree
 nav:
