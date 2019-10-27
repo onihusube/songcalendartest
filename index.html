@@ -65,6 +65,31 @@
     
     
       
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-150909325-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -341,6 +366,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    プライバシーポリシー
+  </a>
+  
+</li>
+      
       
       
       
@@ -578,6 +610,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    プライバシーポリシー
+  </a>
+  
+</li>
+      
       
       
       
@@ -615,6 +654,10 @@ Issueでも良いです、気軽にどうぞ～。</p>
 <p><img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /><br />
 本サイトの内容はパブリックドメインです。<br />
 ただし、作品や曲のタイトル、キャラクター名等の著作権は、それぞれの所有者に帰属します。</p>
+<h2 id="_4">プライバシーポリシー</h2>
+<p>このサイトではGoogleアナリティクスによってアクセスの解析を行っています。そのため、ファーストパーティCookieにより匿名のトラフィックデータを収集しています。</p>
+<p>詳細については、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">「ユーザーが Google パートナーのサイトやアプリを使用する際の Google によるデータ使用」</a>をご覧ください。</p>
+<p>これによって得られた情報はこのサイトを運営するモチベーションの維持のために利用されています。</p>
                 
                   
                 
