@@ -20,7 +20,7 @@ theme:
 extra:
   search:
     language: 'en, ja'
-    tokenizer: '[\s　、。，．・～&!?！？はがのをにへとでやかもる「」『』]+'
+    tokenizer: '[\s　、。，．・\~～&!?！？はがのをにへとでやかもる「」『』]+'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/onihusube9'
